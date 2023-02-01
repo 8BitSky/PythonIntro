@@ -1,0 +1,15 @@
+#Data Types
+#Integers, Strings, Floats and Booleans
+#Variables and Values
+#Strings
+first_name = 'Cruise' 
+#Booleans
+likes_spicy_food = True
+#Float
+height = 6.1
+#Integer
+classrooms = 3
+#Concatenation 
+print(first_name,likes_spicy_food,height,classrooms)
+print('My name is: ' + first_name)
+
