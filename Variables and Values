@@ -1,0 +1,36 @@
+#Variable and Values
+#Variables are "things" that can be changed
+#Variables are representations of "something"
+#Values are the actual data!
+
+
+human1 = 'Tuff'
+human2 = 'Christian'
+human3 = 'Alex'
+human4 = 'Seth'
+human5 = 'Reynold'
+
+#Print all names in a line
+print('Attendance:')
+print(human1,human2,human3,human4,human5)
+print()
+
+#Print all names vertically
+print('Attendance:')
+print(human1)
+print(human2)
+print(human3)
+print(human4)
+print(human5)
+print()
+
+#One Dimensional Array with For Loop Iteration
+humans = ['Chris','Tuff','Alex','Seth','Reynold']
+for human in humans:
+    print(human)
+
+
+
+
+
+
