@@ -3,6 +3,9 @@
 #Variables are representations of "something"
 #Values are the actual data!
 
+#A Python variable is a symbolic name that is a reference or pointer to an object. 
+#Once an object is assigned to a variable, you can refer to the object by that name.
+
 
 human1 = 'Tuff'
 human2 = 'Christian'
