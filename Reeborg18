@@ -1,0 +1,69 @@
+#REEBORG 18 Potential Solution
+
+think(10)
+
+def turn_right():
+    repeat 3:
+        turn_left()
+        
+def turn_around():
+    repeat 2:
+        turn_left()
+
+def face_north():
+    while not is_facing_north():
+        turn_left()
+        
+def go_home():
+    turn_around()
+    while front_is_clear():
+        move()
+    else:
+        turn_right()
+    while front_is_clear():
+        move()
+    else: 
+        if at_goal():
+            turn_right()
+            return
+        
+def collect_carrots():
+    while object_here():
+        take()
+            
+def deposit_carrots():
+    while carries_object():
+        put()
+        
+def next_col_carrots():
+    turn_around()
+    while front_is_clear():
+        move()
+    turn_left()
+    if front_is_clear():
+       move()
+       face_north()
+       harvest()
+    else:
+        turn_left()
+        while front_is_clear():
+            move()
+        else:
+            deposit_carrots()
+        
+def harvest_col_carrots():
+    collect_carrots()
+    if front_is_clear():
+        move()
+        harvest_col_carrots()
+    else:
+        next_col_carrots()
+        
+#This function originally had some logic to detect final goal. This was moved into the next_col_carrots() function.
+def harvest():
+        harvest_col_carrots()
+        
+face_north()
+go_home()
+harvest()
+go_home()
