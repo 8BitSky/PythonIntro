@@ -1,0 +1,58 @@
+#Section - Functions
+def add_numbers(a, b):
+    sum_numbers = a + b
+    return f"{a} + {b} = {sum_numbers}"
+    
+def sub_numbers(a, b):
+    dif_numbers = a - b
+    return f"{a} - {b} = {dif_numbers}"
+
+def mul_numbers(a, b):
+    pro_numbers = a * b
+    return f"{a} * {b} = {sum_numbers}"
+
+def div_numbers(a, b):
+    quo_numbers = a / b
+    return f"{a} / {b} = {sum_numbers}"
+
+
+#Section - While Loop
+while True:
+     print("Select an operation: 1. Add , 2. Subtract , 3. Multiply , 4. Divide.")
+     user_sel = int(input("Please enter: 1, 2, 3, or 4."))
+     if user_sel in [1,2,3,4]:
+         try:
+            user_num1 = float(input("What is your first number?"))
+            user_num2 = float(input("What is your second number?"))
+         except ValueError:
+             print("You did not make a proper selection. Please enter a single digit.")
+             continue
+# SWITCH Solution
+         print()
+         match user_sel:
+            case 1:
+                print(add_numbers(user_num1, user_num2))
+            case 2:
+                print(sub_numbers(user_num1, user_num2))
+            case 3:
+                print(mul_numbers(user_num1, user_num2))
+            case 4:
+                print(div_numbers(user_num1, user_num2))
+         print()
+         next_calc = input("Would you like to exit? Type exit")
+         if next_calc == "exit":
+            break
+     else:
+        print("Invalid Input")
+
+
+#IF Solution
+# if user_sel == "ADD":
+#     print(add_numbers(user_num1, user_num2))
+#     
+# if user_sel == "SUBTRACT":
+#     print(sub_numbers(user_num1, user_num2))
+
+
+
+    
