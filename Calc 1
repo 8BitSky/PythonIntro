@@ -1,0 +1,12 @@
+user_sel = input("For two numbers, do you wish to Add, Subtract, Multiply, Divide?").upper()
+
+user_num1 = int(input("Please enter number one:"))
+user_num2 = int(input("Please enter number two:"))
+
+def add_numbers(a, b):
+    sum_numbers = a + b
+    return sum_numbers
+    
+if user_sel == "ADD":
+    print(add_numbers(user_num1, user_num2))
+    
