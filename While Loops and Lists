@@ -1,0 +1,11 @@
+myList = []
+print(f"Original List: {myList}") 
+i=1
+while i < 10:
+    myList.append(i)
+    i+=1
+print(f"Final List: {myList}") 
+
+
+#Using: https://www.w3schools.com/python/python_lists_add.asp
+#Using: https://www.w3schools.com/python/python_while_loops.asp
